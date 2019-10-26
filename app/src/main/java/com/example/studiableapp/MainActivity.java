@@ -114,11 +114,11 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                 startActivity(intent35);
                 break;
             case R.id.button31:
-                Intent intent31 = new Intent(this, MainActivity2.class);
+                Intent intent31 = new Intent(this, MainActivity31.class);
                 startActivity(intent31);
                 break;
             case R.id.button18:
-                Intent intent18 = new Intent(this, MainActivity2.class);
+                Intent intent18 = new Intent(this, MainActivity18.class);
                 startActivity(intent18);
                 break;
         }
