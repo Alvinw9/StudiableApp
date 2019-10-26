@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/editText3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Place Holder" />
+
+                <TextView
+                    android:id="@+id/editText4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:text="The text above means nothing and ignore this line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/editText9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Place Holder" />
+
+                <TextView
+                    android:id="@+id/editText10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:text="The text above means nothing and ignore this line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/editText7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Place Holder" />
+
+                <TextView
+                    android:id="@+id/editText8"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:text="The text above means nothing and ignore this line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/editText5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Place Holder" />
+
+                <TextView
+                    android:id="@+id/editText6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:text="The text above means nothing and ignore this line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:text="Place Holder" />
+
+                <TextView
+                    android:id="@+id/editText2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="none"
+                    android:ems="10"
+                    android:gravity="center_horizontal|center_vertical"
+                    android:maxLines="100"
+                    android:scrollHorizontally="false"
+                    android:text="The text above means nothing and ignore this line" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Place Holder" />
+
+            <TextView
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:text="The text above means nothing and ignore this line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Place Holder" />
+
+            <TextView
+                android:id="@+id/editText10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:text="The text above means nothing and ignore this line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Place Holder" />
+
+            <TextView
+                android:id="@+id/editText8"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:text="The text above means nothing and ignore this line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Place Holder" />
+
+            <TextView
+                android:id="@+id/editText6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:text="The text above means nothing and ignore this line" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Place Holder" />
+
+            <TextView
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ellipsize="none"
+                android:ems="10"
+                android:gravity="center_horizontal|center_vertical"
+                android:maxLines="100"
+                android:scrollHorizontally="false"
+                android:text="The text above means nothing and ignore this line" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Place Holder" />
+
+        <TextView
+            android:id="@+id/editText4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:text="The text above means nothing and ignore this line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editText11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Place Holder" />
+
+    <TextView
+        android:id="@+id/editText12"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:text="The text above means nothing and ignore this line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText9"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Place Holder" />
+
+        <TextView
+            android:id="@+id/editText10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:text="The text above means nothing and ignore this line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editText13"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Place Holder" />
+
+    <TextView
+        android:id="@+id/editText14"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:text="The text above means nothing and ignore this line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Place Holder" />
+
+        <TextView
+            android:id="@+id/editText8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:text="The text above means nothing and ignore this line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editText15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Place Holder" />
+
+    <TextView
+        android:id="@+id/editText16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:text="The text above means nothing and ignore this line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Place Holder" />
+
+        <TextView
+            android:id="@+id/editText6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:text="The text above means nothing and ignore this line" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editText17"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Place Holder" />
+
+    <TextView
+        android:id="@+id/editText18"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:text="The text above means nothing and ignore this line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Place Holder" />
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="none"
+            android:ems="10"
+            android:gravity="center_horizontal|center_vertical"
+            android:maxLines="100"
+            android:scrollHorizontally="false"
+            android:text="The text above means nothing and ignore this line" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/editText19"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal|center_vertical"
+        android:text="Place Holder" />
+
+    <TextView
+        android:id="@+id/editText20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:ellipsize="none"
+        android:ems="10"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLines="100"
+        android:scrollHorizontally="false"
+        android:text="The text above means nothing and ignore this line" />
+</LinearLayout>

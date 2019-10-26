@@ -11,13 +11,26 @@ import androidx.appcompat.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.content.Intent;
+import android.content.Context;
+
+
+
+
+
 
 public class MainActivity extends AppCompatActivity {
+
+    Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        addListenerOnButton();
+
         //Toolbar toolbar = findViewById(R.id.toolbar);
         //setSupportActionBar(toolbar);
 
@@ -29,6 +42,44 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+
+        /*button = (Button)findViewById(R.id.button35);
+
+        button.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+
+                *//*
+                 * Intent is just like glue which helps to navigate one activity
+                 * to another.
+                 *//*Intent intent = new Intent(MainActivity.this,
+                        MainActivity2.class);
+                startActivity(intent); // startActivity allow you to move
+            }
+        });*/
+    }
+
+    public void addListenerOnButton() {
+
+        final Context context = this;
+
+        button = (Button) findViewById(R.id.button35);
+
+        button.setOnClickListener(new OnClickListener() {
+
+            @Override
+            public void onClick(View arg0) {
+
+                Intent intent = new Intent(context, MainActivity2.class);
+                startActivity(intent);
+
+            }
+
+        });
+
     }
 
     @Override
@@ -52,4 +103,7 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
+
 }
