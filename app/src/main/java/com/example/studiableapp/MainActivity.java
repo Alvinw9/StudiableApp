@@ -21,9 +21,9 @@ import android.content.Context;
 
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements OnClickListener{
 
-    Button button;
+    //Button button;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,21 +55,30 @@ public class MainActivity extends AppCompatActivity {
 
     public void addListenerOnButton() {
 
-        final Context context = this;
 
-        button = (Button) findViewById(R.id.button35);
 
-        button.setOnClickListener(new OnClickListener() {
+        Button button35 = findViewById(R.id.button35);
+        Button button36 = findViewById(R.id.button31);
+        Button button18 = findViewById(R.id.button18);
+
+
+
+        button35.setOnClickListener(this);
+        button36.setOnClickListener(this);
+        button18.setOnClickListener(this); /*{
+/*{
+
+/*{
 
             @Override
-            public void onClick(View arg0) {
+            public void onClick(View v) {
 
                 Intent intent = new Intent(context, MainActivity2.class);
                 startActivity(intent);
 
             }
 
-        });
+        });*/
 
     }
 
@@ -96,5 +105,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
+    @Override
+    public void onClick(View v) {
+        //final Context context = this;
+        switch(v.getId()) {
+            case R.id.button35:
+                Intent intent35 = new Intent(this, MainActivity2.class);
+                startActivity(intent35);
+                break;
+            case R.id.button31:
+                Intent intent31 = new Intent(this, MainActivity2.class);
+                startActivity(intent31);
+                break;
+            case R.id.button18:
+                Intent intent18 = new Intent(this, MainActivity2.class);
+                startActivity(intent18);
+                break;
+        }
+    }
 }
