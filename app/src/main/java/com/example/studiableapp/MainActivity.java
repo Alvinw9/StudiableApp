@@ -30,55 +30,17 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         addListenerOnButton();
-
-        //Toolbar toolbar = findViewById(R.id.toolbar);
-        //setSupportActionBar(toolbar);
-
-
-        /*button = (Button)findViewById(R.id.button35);
-
-        button.setOnClickListener(new OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-
-                *//*
-                 * Intent is just like glue which helps to navigate one activity
-                 * to another.
-                 *//*Intent intent = new Intent(MainActivity.this,
-                        MainActivity2.class);
-                startActivity(intent); // startActivity allow you to move
-            }
-        });*/
     }
 
     public void addListenerOnButton() {
-
-
 
         Button button35 = findViewById(R.id.button35);
         Button button36 = findViewById(R.id.button31);
         Button button18 = findViewById(R.id.button18);
 
-
-
         button35.setOnClickListener(this);
         button36.setOnClickListener(this);
-        button18.setOnClickListener(this); /*{
-/*{
-
-/*{
-
-            @Override
-            public void onClick(View v) {
-
-                Intent intent = new Intent(context, MainActivity2.class);
-                startActivity(intent);
-
-            }
-
-        });*/
+        button18.setOnClickListener(this);
 
     }
 

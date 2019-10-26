@@ -9,7 +9,7 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.flashcards);
+        setContentView(R.layout.flashcards_content);
     }
 
 }
