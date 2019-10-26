@@ -12,24 +12,23 @@
         android:layout_height="89dp"
         android:theme="@style/AppTheme.AppBarOverlay">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="91dp"
+            android:autoText="false"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:gravity="center_vertical"
+            android:inputType="textPersonName"
+            android:text="  Studiable"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
         android:id="@+id/include"
         layout="@layout/content_main" />
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:autoText="false"
-        android:ems="10"
-        android:fontFamily="monospace"
-        android:gravity="center_vertical"
-        android:inputType="textPersonName"
-        android:text="  Studiable"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="30sp"
-        android:textStyle="bold" />
 
     <ImageView
         android:id="@+id/imageView2"
