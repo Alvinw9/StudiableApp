@@ -61,13 +61,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_weight="1"
-                        android:hint="Hold to Set"
-                        android:visibility="invisible"
-                        android:singleLine="false"
+                        android:hint="Hold to edit"
+                        android:maxLines="4"
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
-                        android:maxLines="4" />
-                        android:hint="Hold to edit"
+                        android:singleLine="false"
                         android:visibility="invisible" />
                 </FrameLayout>
 

@@ -28,7 +28,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
 
-    Button button35Click;
+    public static Button button35Click;
     Button button36Click;
     Button button33Click;
     Button button34Click;
