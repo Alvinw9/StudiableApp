@@ -23,8 +23,7 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="20"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp" />
+            android:paddingTop="18dp"/>
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView

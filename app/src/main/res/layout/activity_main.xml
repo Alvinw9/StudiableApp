@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#6091F3"
+    android:background="#2620c9"
     tools:context=".MainActivity">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -19,15 +19,15 @@
             android:fontFamily="monospace"
             android:gravity="center_vertical"
             android:inputType="textPersonName"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="20"
             android:text=" Studiable"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textColor="#FFFFFF"
             android:textSize="30sp"
-            android:textStyle="bold"
-            android:shadowColor="#000000"
-            android:shadowDx="0"
-            android:shadowDy="0"
-            android:shadowRadius="20"/>
+            android:textStyle="bold" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <include
