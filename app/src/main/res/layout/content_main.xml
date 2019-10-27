@@ -35,14 +35,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button36"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -55,14 +57,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button34"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -75,14 +79,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button31"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -95,14 +101,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button30"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -115,14 +123,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button28"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -135,14 +145,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button26"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -155,14 +167,16 @@
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button19"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -177,14 +191,16 @@
                     android:layout_height="200dp"
                     android:layout_weight="1"
                     android:background="@android:drawable/ic_notification_clear_all"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button21"
                     android:layout_width="wrap_content"
                     android:layout_height="200dp"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:text="Button"
+                    android:visibility="invisible" />
             </LinearLayout>
 
         </LinearLayout>
