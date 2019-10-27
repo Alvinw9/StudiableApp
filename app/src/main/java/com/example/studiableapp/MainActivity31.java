@@ -1,9 +1,10 @@
 package com.example.studiableapp;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.content.SharedPreferences;
+
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -11,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,7 +51,7 @@ public class MainActivity31 extends AppCompatActivity {
         ImageView addFlashCard = findViewById(R.id.imageView3);
 
         textView = findViewById(R.id.textView);
-        textView.setText(MainActivity.button35Click.getText());
+        textView.setText(MainActivity.button31Click.getText());
 
         text3Click = findViewById(R.id.editText3);
         text4Click = findViewById(R.id.editText4);
@@ -79,7 +79,6 @@ public class MainActivity31 extends AppCompatActivity {
         switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch1.setText("Hide");
                     text4Click.setVisibility(View.INVISIBLE);
@@ -93,7 +92,6 @@ public class MainActivity31 extends AppCompatActivity {
         switch2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch2.setText("Hide");
                     text10Click.setVisibility(View.INVISIBLE);
@@ -107,7 +105,6 @@ public class MainActivity31 extends AppCompatActivity {
         switch3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch3.setText("Hide");
                     text8Click.setVisibility(View.INVISIBLE);
@@ -121,7 +118,6 @@ public class MainActivity31 extends AppCompatActivity {
         switch4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch4.setText("Hide");
                     text6Click.setVisibility(View.INVISIBLE);
@@ -135,7 +131,6 @@ public class MainActivity31 extends AppCompatActivity {
         switch5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch5.setText("Hide");
                     text2Click.setVisibility(View.INVISIBLE);
@@ -150,54 +145,52 @@ public class MainActivity31 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                //saveData();
+
                 if ( text3Click.getVisibility() != View.VISIBLE ) {
                     text3Click.setVisibility(View.VISIBLE);
                     text4Click.setVisibility(View.VISIBLE);
                     linearLayout1.setVisibility(View.VISIBLE);
-                    //saveData();
                     switch1.setVisibility(View.VISIBLE);
                 } else if ( text3Click.getVisibility() == View.VISIBLE ) {
                     if ( text9Click.getVisibility() != View.VISIBLE ) {
                         text9Click.setVisibility(View.VISIBLE);
                         text10Click.setVisibility(View.VISIBLE);
                         linearLayout2.setVisibility(View.VISIBLE);
-                        //saveData();
                         switch2.setVisibility(View.VISIBLE);
                     } else if ( text9Click.getVisibility() == View.VISIBLE ) {
                         if ( text7Click.getVisibility() != View.VISIBLE ) {
                             text7Click.setVisibility(View.VISIBLE);
                             text8Click.setVisibility(View.VISIBLE);
                             linearLayout3.setVisibility(View.VISIBLE);
-                            //saveData();
                             switch3.setVisibility(View.VISIBLE);
                         } else if ( text7Click.getVisibility() == View.VISIBLE ) {
                             if ( text5Click.getVisibility() != View.VISIBLE ) {
                                 text5Click.setVisibility(View.VISIBLE);
                                 text6Click.setVisibility(View.VISIBLE);
                                 linearLayout4.setVisibility(View.VISIBLE);
-                                //saveData();
                                 switch4.setVisibility(View.VISIBLE);
                             } else if ( text5Click.getVisibility() == View.VISIBLE ) {
                                 if ( textClick.getVisibility() != View.VISIBLE ) {
                                     textClick.setVisibility(View.VISIBLE);
                                     text2Click.setVisibility(View.VISIBLE);
                                     linearLayout5.setVisibility(View.VISIBLE);
-                                    //saveData();
                                     switch5.setVisibility(View.VISIBLE);
                                 }
                             }
                         }
                     }
                 }
-                saveData3();
+
+                saveData2();
+
             }
 
         });
+
     }
 
-    private void saveData3() {
-        SharedPreferences sp = getSharedPreferences("Flashcards3", Context.MODE_PRIVATE);
+    private void saveData2() {
+        SharedPreferences sp = getSharedPreferences("Flashcards2", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("text3", text3Click.getText().toString());
         editor.putInt("text3b", text3Click.getVisibility());
@@ -230,8 +223,8 @@ public class MainActivity31 extends AppCompatActivity {
         editor.apply();
     }
 
-    private void loadData3() {
-        SharedPreferences sp = getSharedPreferences("Flashcards3", Context.MODE_PRIVATE);
+    private void loadData2() {
+        SharedPreferences sp = getSharedPreferences("Flashcards2", Context.MODE_PRIVATE);
         text3Click.setText(sp.getString("text3", text3Click.getText().toString()));
         text3Click.setVisibility(sp.getInt("text3b", text3Click.getVisibility()));
         text4Click.setText(sp.getString("text4", text4Click.getText().toString()));
@@ -276,17 +269,16 @@ public class MainActivity31 extends AppCompatActivity {
             text2Click.setVisibility(View.VISIBLE);
         }
     }
-
     @Override
     protected void onStop() {
         super.onStop();
-        saveData3();
+        saveData2();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        loadData3();
+        loadData2();
     }
 
 }

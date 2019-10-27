@@ -1,9 +1,10 @@
 package com.example.studiableapp;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.content.SharedPreferences;
+
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -11,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -51,7 +51,7 @@ public class MainActivity18 extends AppCompatActivity {
         ImageView addFlashCard = findViewById(R.id.imageView3);
 
         textView = findViewById(R.id.textView);
-        textView.setText(MainActivity.button35Click.getText());
+        textView.setText(MainActivity.button18Click.getText());
 
         text3Click = findViewById(R.id.editText3);
         text4Click = findViewById(R.id.editText4);
@@ -145,6 +145,7 @@ public class MainActivity18 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
                 if ( text3Click.getVisibility() != View.VISIBLE ) {
                     text3Click.setVisibility(View.VISIBLE);
                     text4Click.setVisibility(View.VISIBLE);
@@ -179,14 +180,17 @@ public class MainActivity18 extends AppCompatActivity {
                         }
                     }
                 }
-                saveData2();
+
+                saveData3();
+
             }
 
         });
+
     }
 
-    private void saveData2() {
-        SharedPreferences sp = getSharedPreferences("Flashcards2", Context.MODE_PRIVATE);
+    private void saveData3() {
+        SharedPreferences sp = getSharedPreferences("Flashcards3", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("text3", text3Click.getText().toString());
         editor.putInt("text3b", text3Click.getVisibility());
@@ -219,8 +223,8 @@ public class MainActivity18 extends AppCompatActivity {
         editor.apply();
     }
 
-    private void loadData2() {
-        SharedPreferences sp = getSharedPreferences("Flashcards2", Context.MODE_PRIVATE);
+    private void loadData3() {
+        SharedPreferences sp = getSharedPreferences("Flashcards3", Context.MODE_PRIVATE);
         text3Click.setText(sp.getString("text3", text3Click.getText().toString()));
         text3Click.setVisibility(sp.getInt("text3b", text3Click.getVisibility()));
         text4Click.setText(sp.getString("text4", text4Click.getText().toString()));
@@ -265,17 +269,16 @@ public class MainActivity18 extends AppCompatActivity {
             text2Click.setVisibility(View.VISIBLE);
         }
     }
-
     @Override
     protected void onStop() {
         super.onStop();
-        saveData2();
+        saveData3();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        loadData2();
+        loadData3();
     }
 
 }

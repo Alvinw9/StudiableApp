@@ -1,9 +1,10 @@
 package com.example.studiableapp;
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.content.SharedPreferences;
+
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -11,7 +12,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -145,6 +145,7 @@ public class MainActivity2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
+
                 if ( text3Click.getVisibility() != View.VISIBLE ) {
                     text3Click.setVisibility(View.VISIBLE);
                     text4Click.setVisibility(View.VISIBLE);
@@ -179,10 +180,13 @@ public class MainActivity2 extends AppCompatActivity {
                         }
                     }
                 }
+
                 saveData1();
+
             }
 
         });
+
     }
 
     private void saveData1() {
@@ -265,7 +269,6 @@ public class MainActivity2 extends AppCompatActivity {
             text2Click.setVisibility(View.VISIBLE);
         }
     }
-
     @Override
     protected void onStop() {
         super.onStop();
