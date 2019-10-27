@@ -1,5 +1,6 @@
 package com.example.studiableapp;
 
+import android.app.AlarmManager;
 import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
@@ -9,6 +10,8 @@ import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
 
 import android.view.KeyEvent;
 import android.text.Layout;
@@ -62,6 +65,21 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     EditText editText24;
     EditText editText25;
     EditText editText26;
+
+    Button buttonNoti;
+
+    private final String CHANNEL_ID = "personal_notifications";
+    private final int NOTIFICATION_ID = 001;
+    /*public void displayNotification(View view) {
+        NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID);
+        builder.setSmallIcon(R.drawable.ic_sms_notification);
+        builder.setContentTitle("Simple Notification");
+        builder.setContentText("This is a simple notification.");
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
+        notificationManagerCompat.notify(NOTIFICATION_ID, builder.build());
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -749,6 +767,8 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         Button button35 = findViewById(R.id.button35);
         Button button36 = findViewById(R.id.button31);
         Button button18 = findViewById(R.id.button18);
+        Button button = findViewById(R.id.button);
+        button.setOnClickListener(this);
         button35.setOnClickListener(this);
         button36.setOnClickListener(this);
         button18.setOnClickListener(this);
@@ -792,6 +812,15 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
             case R.id.button18:
                 Intent intent18 = new Intent(this, MainActivity18.class);
                 startActivity(intent18);
+                break;
+            case R.id.button:
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID);
+                builder.setSmallIcon(R.drawable.ic_sms_notification);
+                builder.setContentTitle("Simple Notification");
+                builder.setContentText("This is a simple notification");
+
+                NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
+                notificationManagerCompat.notify(NOTIFICATION_ID, builder.build());
                 break;
         }
     }
