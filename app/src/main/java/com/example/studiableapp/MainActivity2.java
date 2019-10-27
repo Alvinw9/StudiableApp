@@ -1,54 +1,78 @@
 package com.example.studiableapp;
 
-import android.media.Image;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
-import android.text.Layout;
 import android.view.View;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.content.Intent;
-import android.content.Context;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
-public class MainActivity2 extends AppCompatActivity /*implements OnClickListener*/ {
+import androidx.appcompat.app.AppCompatActivity;
 
-    /*LinearLayout linLay0Click;
-    TextView editText4Click;*/
+public class MainActivity2 extends AppCompatActivity {
+
+    TextView text3Click;
+    TextView text4Click;
+    TextView text9Click;
+    TextView text10Click;
+    TextView text7Click;
+    TextView text8Click;
+    TextView text5Click;
+    TextView text6Click;
+    TextView textClick;
+    TextView text2Click;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.flashcards_content);
-        /*addListenerOnButton();
-        ImageView addCardText = findViewById(R.id.imageView);
 
-        linLay0Click = findViewById(R.id.LinLay0);
+        ImageView addFlashCard = findViewById(R.id.imageView3);
 
-        addCardText.setOnClickListener(new View.OnClickListener()) {
+        text3Click = findViewById(R.id.editText3);
+        text4Click = findViewById(R.id.editText4);
+        text9Click = findViewById(R.id.editText9);
+        text10Click = findViewById(R.id.editText10);
+        text7Click = findViewById(R.id.editText7);
+        text8Click = findViewById(R.id.editText8);
+        text5Click = findViewById(R.id.editText5);
+        text6Click = findViewById(R.id.editText6);
+        textClick = findViewById(R.id.editText);
+        text2Click = findViewById(R.id.editText2);
+
+        addFlashCard.setOnClickListener(new View.OnClickListener() {
+
             @Override
-            public void onClick (View v){
-                if (editText4Click.getVisibility() != View.VISIBLE) {
-                    editText4Click.setVisibility(View.VISIBLE);
-                } else {
-                    editText4Click.setVisibility(View.VISIBLE)
+            public void onClick(View v) {
+
+                if ( text3Click.getVisibility() != View.VISIBLE ) {
+                    text3Click.setVisibility(View.VISIBLE);
+                    text4Click.setVisibility(View.VISIBLE);
+                } else if ( text3Click.getVisibility() == View.VISIBLE ) {
+                    if ( text9Click.getVisibility() != View.VISIBLE ) {
+                        text9Click.setVisibility(View.VISIBLE);
+                        text10Click.setVisibility(View.VISIBLE);
+                    } else if ( text9Click.getVisibility() == View.VISIBLE ) {
+                        if ( text7Click.getVisibility() != View.VISIBLE ) {
+                            text7Click.setVisibility(View.VISIBLE);
+                            text8Click.setVisibility(View.VISIBLE);
+                        } else if ( text7Click.getVisibility() == View.VISIBLE ) {
+                            if ( text5Click.getVisibility() != View.VISIBLE ) {
+                                text5Click.setVisibility(View.VISIBLE);
+                                text6Click.setVisibility(View.VISIBLE);
+                            } else if ( text5Click.getVisibility() == View.VISIBLE ) {
+                                if ( textClick.getVisibility() != View.VISIBLE ) {
+                                    textClick.setVisibility(View.VISIBLE);
+                                    text2Click.setVisibility(View.VISIBLE);
+                                }
+                            }
+                        }
+                    }
                 }
+
             }
-        }*/
+
+        });
+
     }
 
-    /*public void addListenerOnButton() {
-        LinearLayout linLayout0Click = findViewById(R.id.LinLay0);
-    }*/
 }

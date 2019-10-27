@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -12,7 +13,8 @@
             android:id="@+id/LinLay0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:visibility="invisible">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -28,7 +30,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="Place Holder" />
+                    android:text="Place Holder"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
 
                 <TextView
                     android:id="@+id/editText4"
@@ -40,7 +44,9 @@
                     android:gravity="center_horizontal|center_vertical"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line" />
+                    android:text="The text above means nothing and ignore this line"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -57,7 +63,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="Place Holder" />
+                    android:text="Place Holder"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
 
                 <TextView
                     android:id="@+id/editText10"
@@ -69,7 +77,9 @@
                     android:gravity="center_horizontal|center_vertical"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line" />
+                    android:text="The text above means nothing and ignore this line"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -86,7 +96,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="Place Holder" />
+                    android:text="Place Holder"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
 
                 <TextView
                     android:id="@+id/editText8"
@@ -98,7 +110,9 @@
                     android:gravity="center_horizontal|center_vertical"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line" />
+                    android:text="The text above means nothing and ignore this line"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -115,7 +129,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="Place Holder" />
+                    android:text="Place Holder"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
 
                 <TextView
                     android:id="@+id/editText6"
@@ -127,7 +143,9 @@
                     android:gravity="center_horizontal|center_vertical"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line" />
+                    android:text="The text above means nothing and ignore this line"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
             </LinearLayout>
 
             <LinearLayout
@@ -144,7 +162,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight="2"
                     android:gravity="center_horizontal|center_vertical"
-                    android:text="Place Holder" />
+                    android:text="Place Holder"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
 
                 <TextView
                     android:id="@+id/editText2"
@@ -156,7 +176,9 @@
                     android:gravity="center_horizontal|center_vertical"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line" />
+                    android:text="The text above means nothing and ignore this line"
+                    android:visibility="invisible"
+                    tools:visibility="invisible" />
 
             </LinearLayout>
         </LinearLayout>
