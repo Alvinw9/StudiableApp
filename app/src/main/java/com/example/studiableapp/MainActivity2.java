@@ -79,7 +79,6 @@ public class MainActivity2 extends AppCompatActivity {
         switch1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch1.setText("Hide");
                     text4Click.setVisibility(View.INVISIBLE);
@@ -93,7 +92,6 @@ public class MainActivity2 extends AppCompatActivity {
         switch2.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch2.setText("Hide");
                     text10Click.setVisibility(View.INVISIBLE);
@@ -107,7 +105,6 @@ public class MainActivity2 extends AppCompatActivity {
         switch3.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch3.setText("Hide");
                     text8Click.setVisibility(View.INVISIBLE);
@@ -121,7 +118,6 @@ public class MainActivity2 extends AppCompatActivity {
         switch4.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch4.setText("Hide");
                     text6Click.setVisibility(View.INVISIBLE);
@@ -135,7 +131,6 @@ public class MainActivity2 extends AppCompatActivity {
         switch5.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                //saveData();
                 if (!isChecked) {
                     switch5.setText("Hide");
                     text2Click.setVisibility(View.INVISIBLE);
@@ -150,53 +145,47 @@ public class MainActivity2 extends AppCompatActivity {
 
             @Override
             public void onClick(View v) {
-                //saveData();
                 if ( text3Click.getVisibility() != View.VISIBLE ) {
                     text3Click.setVisibility(View.VISIBLE);
                     text4Click.setVisibility(View.VISIBLE);
                     linearLayout1.setVisibility(View.VISIBLE);
-                    //saveData();
                     switch1.setVisibility(View.VISIBLE);
                 } else if ( text3Click.getVisibility() == View.VISIBLE ) {
                     if ( text9Click.getVisibility() != View.VISIBLE ) {
                         text9Click.setVisibility(View.VISIBLE);
                         text10Click.setVisibility(View.VISIBLE);
                         linearLayout2.setVisibility(View.VISIBLE);
-                        //saveData();
                         switch2.setVisibility(View.VISIBLE);
                     } else if ( text9Click.getVisibility() == View.VISIBLE ) {
                         if ( text7Click.getVisibility() != View.VISIBLE ) {
                             text7Click.setVisibility(View.VISIBLE);
                             text8Click.setVisibility(View.VISIBLE);
                             linearLayout3.setVisibility(View.VISIBLE);
-                            //saveData();
                             switch3.setVisibility(View.VISIBLE);
                         } else if ( text7Click.getVisibility() == View.VISIBLE ) {
                             if ( text5Click.getVisibility() != View.VISIBLE ) {
                                 text5Click.setVisibility(View.VISIBLE);
                                 text6Click.setVisibility(View.VISIBLE);
                                 linearLayout4.setVisibility(View.VISIBLE);
-                                //saveData();
                                 switch4.setVisibility(View.VISIBLE);
                             } else if ( text5Click.getVisibility() == View.VISIBLE ) {
                                 if ( textClick.getVisibility() != View.VISIBLE ) {
                                     textClick.setVisibility(View.VISIBLE);
                                     text2Click.setVisibility(View.VISIBLE);
                                     linearLayout5.setVisibility(View.VISIBLE);
-                                    //saveData();
                                     switch5.setVisibility(View.VISIBLE);
                                 }
                             }
                         }
                     }
                 }
-                saveData();
+                saveData1();
             }
 
         });
     }
 
-    private void saveData() {
+    private void saveData1() {
         SharedPreferences sp = getSharedPreferences("Flashcards1", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("text3", text3Click.getText().toString());
@@ -230,7 +219,7 @@ public class MainActivity2 extends AppCompatActivity {
         editor.apply();
     }
 
-    private void loadData() {
+    private void loadData1() {
         SharedPreferences sp = getSharedPreferences("Flashcards1", Context.MODE_PRIVATE);
         text3Click.setText(sp.getString("text3", text3Click.getText().toString()));
         text3Click.setVisibility(sp.getInt("text3b", text3Click.getVisibility()));
@@ -280,13 +269,13 @@ public class MainActivity2 extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        saveData();
+        saveData1();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        loadData();
+        loadData1();
     }
 
 }

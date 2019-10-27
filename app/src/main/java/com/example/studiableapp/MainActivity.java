@@ -27,8 +27,6 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.InputStream;
-
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
 
@@ -104,7 +102,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         editText24 = findViewById(R.id.editText24);
         editText25 = findViewById(R.id.editText25);
         editText26 = findViewById(R.id.editText26);
-
 
         button35Click.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -559,66 +556,81 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
             @Override
             public void onClick(View v) {
 
-                saveData();
                 if ( button35Click.getVisibility() != View.VISIBLE ) {
                     button35Click.setVisibility(View.VISIBLE);
+                    saveData();
                 } else if ( button35Click.getVisibility() == View.VISIBLE ) {
                     if ( button36Click.getVisibility() != View.VISIBLE ) {
                         button36Click.setVisibility(View.VISIBLE);
+                        saveData();
                     }
                     else if ( button36Click.getVisibility() == View.VISIBLE ) {
                         if ( button33Click.getVisibility() != View.VISIBLE ) {
                             button33Click.setVisibility(View.VISIBLE);
+                            saveData();
                         } else if (button33Click.getVisibility() == View.VISIBLE) {
                             if (button34Click.getVisibility() != View.VISIBLE) {
                                 button34Click.setVisibility(View.VISIBLE);
+                                saveData();
                             } else if ( button34Click.getVisibility() == View.VISIBLE) {
                                 if ( button32Click.getVisibility() != View.VISIBLE ) {
                                     button32Click.setVisibility(View.VISIBLE);
+                                    saveData();
                                 }
                                 else if ( button32Click.getVisibility() == View.VISIBLE ) {
                                     if ( button31Click.getVisibility() != View.VISIBLE ) {
                                         button31Click.setVisibility(View.VISIBLE);
+                                        saveData();
                                     }
                                     else if ( button31Click.getVisibility() == View.VISIBLE ) {
                                         if ( button29Click.getVisibility() != View.VISIBLE ) {
                                             button29Click.setVisibility(View.VISIBLE);
+                                            saveData();
                                         }
                                         else if ( button29Click.getVisibility() == View.VISIBLE ) {
                                             if ( button30Click.getVisibility() != View.VISIBLE ) {
                                                 button30Click.setVisibility(View.VISIBLE);
+                                                saveData();
                                             }
                                             else if ( button30Click.getVisibility() == View.VISIBLE ) {
                                                 if ( button27Click.getVisibility() != View.VISIBLE ) {
                                                     button27Click.setVisibility(View.VISIBLE);
+                                                    saveData();
                                                 }
                                                 else if ( button27Click.getVisibility() == View.VISIBLE ) {
                                                     if ( button28Click.getVisibility() != View.VISIBLE ) {
                                                         button28Click.setVisibility(View.VISIBLE);
+                                                        saveData();
                                                     }
                                                     else if ( button28Click.getVisibility() == View.VISIBLE ) {
                                                         if ( button25Click.getVisibility() != View.VISIBLE ) {
                                                             button25Click.setVisibility(View.VISIBLE);
+                                                            saveData();
                                                         }
                                                         else if ( button25Click.getVisibility() == View.VISIBLE ) {
                                                             if ( button26Click.getVisibility() != View.VISIBLE ) {
                                                                 button26Click.setVisibility(View.VISIBLE);
+                                                                saveData();
                                                             }
                                                             else if ( button26Click.getVisibility() == View.VISIBLE ) {
                                                                 if ( button18Click.getVisibility() != View.VISIBLE ) {
                                                                     button18Click.setVisibility(View.VISIBLE);
+                                                                    saveData();
                                                                 }
                                                                 else if ( button18Click.getVisibility() == View.VISIBLE ) {
                                                                     if ( button19Click.getVisibility() != View.VISIBLE ) {
                                                                         button19Click.setVisibility(View.VISIBLE);
+                                                                        saveData();
                                                                     }
                                                                     else if ( button19Click.getVisibility() == View.VISIBLE ) {
                                                                         if ( button22Click.getVisibility() != View.VISIBLE ) {
                                                                             button22Click.setVisibility(View.VISIBLE);
+                                                                            saveData();
                                                                         }
                                                                         else if ( button22Click.getVisibility() == View.VISIBLE ) {
                                                                             if ( button21Click.getVisibility() != View.VISIBLE ) {
                                                                                 button21Click.setVisibility(View.VISIBLE);
+                                                                                saveData();
                                                                             }
                                                                         }
                                                                     }
@@ -646,13 +658,79 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     private void saveData() {
         SharedPreferences sp = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
+
         editor.putString("button35text", button35Click.getText().toString());
+        editor.putString("button36text", button36Click.getText().toString());
+        editor.putString("button33text", button33Click.getText().toString());
+        editor.putString("button34text", button34Click.getText().toString());
+        editor.putString("button32text", button32Click.getText().toString());
+        editor.putString("button31text", button31Click.getText().toString());
+        editor.putString("button29text", button29Click.getText().toString());
+        editor.putString("button30text", button30Click.getText().toString());
+        editor.putString("button27text", button27Click.getText().toString());
+        editor.putString("button28text", button28Click.getText().toString());
+        editor.putString("button25text", button25Click.getText().toString());
+        editor.putString("button26text", button26Click.getText().toString());
+        editor.putString("button18text", button18Click.getText().toString());
+        editor.putString("button19text", button19Click.getText().toString());
+        editor.putString("button22text", button22Click.getText().toString());
+        editor.putString("button21text", button21Click.getText().toString());
+
+        editor.putInt("button35Vis", button35Click.getVisibility());
+        editor.putInt("button36Vis", button36Click.getVisibility());
+        editor.putInt("button33Vis", button33Click.getVisibility());
+        editor.putInt("button34Vis", button34Click.getVisibility());
+        editor.putInt("button32Vis", button32Click.getVisibility());
+        editor.putInt("button31Vis", button31Click.getVisibility());
+        editor.putInt("button29Vis", button29Click.getVisibility());
+        editor.putInt("button30Vis", button30Click.getVisibility());
+        editor.putInt("button27Vis", button27Click.getVisibility());
+        editor.putInt("button28Vis", button28Click.getVisibility());
+        editor.putInt("button25Vis", button25Click.getVisibility());
+        editor.putInt("button26Vis", button26Click.getVisibility());
+        editor.putInt("button18Vis", button18Click.getVisibility());
+        editor.putInt("button19Vis", button19Click.getVisibility());
+        editor.putInt("button22Vis", button22Click.getVisibility());
+        editor.putInt("button21Vis", button21Click.getVisibility());
         editor.apply();
     }
 
     private void loadData() {
         SharedPreferences sp = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         button35Click.setText(sp.getString("button35text",button35Click.getText().toString()));
+        button36Click.setText(sp.getString("button36text",button36Click.getText().toString()));
+        button33Click.setText(sp.getString("button33text",button33Click.getText().toString()));
+        button34Click.setText(sp.getString("button34text",button34Click.getText().toString()));
+        button32Click.setText(sp.getString("button32text",button32Click.getText().toString()));
+        button31Click.setText(sp.getString("button31text",button31Click.getText().toString()));
+        button29Click.setText(sp.getString("button29text",button29Click.getText().toString()));
+        button30Click.setText(sp.getString("button30text",button30Click.getText().toString()));
+        button27Click.setText(sp.getString("button27text",button27Click.getText().toString()));
+        button28Click.setText(sp.getString("button28text",button28Click.getText().toString()));
+        button25Click.setText(sp.getString("button25text",button25Click.getText().toString()));
+        button26Click.setText(sp.getString("button26text",button26Click.getText().toString()));
+        button18Click.setText(sp.getString("button18text",button18Click.getText().toString()));
+        button19Click.setText(sp.getString("button19text",button19Click.getText().toString()));
+        button22Click.setText(sp.getString("button22text",button22Click.getText().toString()));
+        button21Click.setText(sp.getString("button21text",button21Click.getText().toString()));
+
+        button35Click.setVisibility(sp.getInt("button35Vis",button35Click.getVisibility()));
+        button36Click.setVisibility(sp.getInt("button36Vis",button36Click.getVisibility()));
+        button33Click.setVisibility(sp.getInt("button33Vis",button33Click.getVisibility()));
+        button34Click.setVisibility(sp.getInt("button34Vis",button34Click.getVisibility()));
+        button32Click.setVisibility(sp.getInt("button32Vis",button32Click.getVisibility()));
+        button31Click.setVisibility(sp.getInt("button31Vis",button31Click.getVisibility()));
+        button29Click.setVisibility(sp.getInt("button29Vis",button29Click.getVisibility()));
+        button30Click.setVisibility(sp.getInt("button30Vis",button30Click.getVisibility()));
+        button27Click.setVisibility(sp.getInt("button27Vis",button27Click.getVisibility()));
+        button28Click.setVisibility(sp.getInt("button28Vis",button28Click.getVisibility()));
+        button25Click.setVisibility(sp.getInt("button25Vis",button25Click.getVisibility()));
+        button26Click.setVisibility(sp.getInt("button26Vis",button26Click.getVisibility()));
+        button18Click.setVisibility(sp.getInt("button18Vis",button18Click.getVisibility()));
+        button19Click.setVisibility(sp.getInt("button19Vis",button19Click.getVisibility()));
+        button22Click.setVisibility(sp.getInt("button22Vis",button22Click.getVisibility()));
+        button21Click.setVisibility(sp.getInt("button21Vis",button21Click.getVisibility()));
+
     }
 
     @Override

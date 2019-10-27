@@ -190,13 +190,13 @@ public class MainActivity31 extends AppCompatActivity {
                         }
                     }
                 }
-                saveData();
+                saveData3();
             }
 
         });
     }
 
-    private void saveData() {
+    private void saveData3() {
         SharedPreferences sp = getSharedPreferences("Flashcards3", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sp.edit();
         editor.putString("text3", text3Click.getText().toString());
@@ -230,7 +230,7 @@ public class MainActivity31 extends AppCompatActivity {
         editor.apply();
     }
 
-    private void loadData() {
+    private void loadData3() {
         SharedPreferences sp = getSharedPreferences("Flashcards3", Context.MODE_PRIVATE);
         text3Click.setText(sp.getString("text3", text3Click.getText().toString()));
         text3Click.setVisibility(sp.getInt("text3b", text3Click.getVisibility()));
@@ -280,13 +280,13 @@ public class MainActivity31 extends AppCompatActivity {
     @Override
     protected void onStop() {
         super.onStop();
-        saveData();
+        saveData3();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        loadData();
+        loadData3();
     }
 
 }
