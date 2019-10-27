@@ -26,31 +26,47 @@
                 android:orientation="vertical"
                 android:visibility="visible">
 
-                <EditText
-                    android:id="@+id/editText3"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:editable="true"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="Place Holder"
-                    android:background="@android:color/transparent"
-                    android:visibility="visible"
-                    tools:visibility="visible" />
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:editable="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:hint="Click to edit"
+                        android:visibility="visible"
+                        tools:visibility="visible" />
+
+                    <Switch
+                        android:id="@+id/switch1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:checked="true"
+                        android:text="Show"
+                        android:textSize="14sp" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/editText4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:editable="true"
                     android:ellipsize="none"
                     android:ems="10"
                     android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
+                    android:hint="Click to edit"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line"
                     android:visibility="visible"
                     tools:visibility="visible" />
             </LinearLayout>
@@ -65,31 +81,47 @@
                 android:orientation="vertical"
                 android:visibility="invisible">
 
-                <EditText
-                    android:id="@+id/editText9"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:editable="true"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
-                    android:text="Place Holder"
-                    android:visibility="invisible"
-                    tools:visibility="invisible" />
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText9"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:editable="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:hint="Click to edit"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Switch
+                        android:id="@+id/switch2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:checked="true"
+                        android:text="Show"
+                        android:visibility="invisible" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/editText10"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:editable="true"
                     android:ellipsize="none"
                     android:ems="10"
                     android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
+                    android:hint="Click to edit"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line"
                     android:visibility="invisible"
                     tools:visibility="invisible" />
             </LinearLayout>
@@ -104,31 +136,47 @@
                 android:orientation="vertical"
                 android:visibility="invisible">
 
-                <EditText
-                    android:id="@+id/editText7"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:editable="true"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
-                    android:text="Place Holder"
-                    android:visibility="invisible"
-                    tools:visibility="invisible" />
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText7"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:editable="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:hint="Click to edit"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Switch
+                        android:id="@+id/switch3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:checked="true"
+                        android:text="Show"
+                        android:visibility="invisible" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/editText8"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:editable="true"
                     android:ellipsize="none"
                     android:ems="10"
                     android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
+                    android:hint="Click to edit"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line"
                     android:visibility="invisible"
                     tools:visibility="invisible" />
             </LinearLayout>
@@ -143,31 +191,47 @@
                 android:orientation="vertical"
                 android:visibility="invisible">
 
-                <EditText
-                    android:id="@+id/editText5"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:editable="true"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
-                    android:text="Place Holder"
-                    android:visibility="invisible"
-                    tools:visibility="invisible" />
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:editable="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:hint="Click to edit"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Switch
+                        android:id="@+id/switch4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6.5"
+                        android:checked="true"
+                        android:text="Show"
+                        android:visibility="invisible" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/editText6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:editable="true"
                     android:ellipsize="none"
                     android:ems="10"
                     android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
+                    android:hint="Click to edit"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line"
                     android:visibility="invisible"
                     tools:visibility="invisible" />
             </LinearLayout>
@@ -182,31 +246,47 @@
                 android:orientation="vertical"
                 android:visibility="invisible">
 
-                <EditText
-                    android:id="@+id/editText"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:editable="true"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
-                    android:text="Place Holder"
-                    android:visibility="invisible"
-                    tools:visibility="invisible" />
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="2"
+                        android:background="@android:color/transparent"
+                        android:editable="true"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:hint="Click to edit"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Switch
+                        android:id="@+id/switch5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="6.5"
+                        android:checked="true"
+                        android:text="Show"
+                        android:visibility="invisible" />
+                </LinearLayout>
 
                 <EditText
                     android:id="@+id/editText2"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:background="@android:color/transparent"
                     android:editable="true"
                     android:ellipsize="none"
                     android:ems="10"
                     android:gravity="center_horizontal|center_vertical"
-                    android:background="@android:color/transparent"
+                    android:hint="Click to edit"
                     android:maxLines="100"
                     android:scrollHorizontally="false"
-                    android:text="The text above means nothing and ignore this line"
                     android:visibility="invisible"
                     tools:visibility="invisible" />
 
