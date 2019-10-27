@@ -19,11 +19,13 @@
             android:layout_height="53dp"
             android:gravity="center|left"
             android:paddingLeft="15dp"
+            android:paddingTop="18dp"
             android:shadowColor="#000000"
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="20"
-            android:paddingTop="18dp"/>
+            android:textColor="#FFFFFF"
+            android:textSize="26sp" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView

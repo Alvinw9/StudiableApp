@@ -118,7 +118,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button35Click.setText(editText11.getText());
+                        button35Click.setText(editText11.getText() + " ");
                         button35Click.setVisibility(View.VISIBLE);
                         editText11.setVisibility(View.INVISIBLE);
                         return true;
@@ -145,7 +145,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button36Click.setText(editText14.getText());
+                        button36Click.setText(editText14.getText() + " ");
                         button36Click.setVisibility(View.VISIBLE);
                         editText14.setVisibility(View.INVISIBLE);
                         return true;
@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button33Click.setText(editText15.getText());
+                        button33Click.setText(editText15.getText() + " ");
                         button33Click.setVisibility(View.VISIBLE);
                         editText15.setVisibility(View.INVISIBLE);
                         return true;
@@ -199,7 +199,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button34Click.setText(editText16.getText());
+                        button34Click.setText(editText16.getText() + " ");
                         button34Click.setVisibility(View.VISIBLE);
                         editText16.setVisibility(View.INVISIBLE);
                         return true;
@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button32Click.setText(editText27.getText());
+                        button32Click.setText(editText27.getText() + " ");
                         button32Click.setVisibility(View.VISIBLE);
                         editText27.setVisibility(View.INVISIBLE);
                         return true;
@@ -253,7 +253,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button31Click.setText(editText28.getText());
+                        button31Click.setText(editText28.getText() + " ");
                         button31Click.setVisibility(View.VISIBLE);
                         editText28.setVisibility(View.INVISIBLE);
                         return true;
@@ -280,7 +280,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button29Click.setText(editText17.getText());
+                        button29Click.setText(editText17.getText() + " ");
                         button29Click.setVisibility(View.VISIBLE);
                         editText17.setVisibility(View.INVISIBLE);
                         return true;
@@ -307,7 +307,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button30Click.setText(editText18.getText());
+                        button30Click.setText(editText18.getText() + " ");
                         button30Click.setVisibility(View.VISIBLE);
                         editText18.setVisibility(View.INVISIBLE);
                         return true;
@@ -334,7 +334,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button27Click.setText(editText19.getText());
+                        button27Click.setText(editText19.getText() + " ");
                         button27Click.setVisibility(View.VISIBLE);
                         editText19.setVisibility(View.INVISIBLE);
                         return true;
@@ -361,7 +361,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button28Click.setText(editText20.getText());
+                        button28Click.setText(editText20.getText() + " ");
                         button28Click.setVisibility(View.VISIBLE);
                         editText20.setVisibility(View.INVISIBLE);
                         return true;
@@ -388,7 +388,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button25Click.setText(editText21.getText());
+                        button25Click.setText(editText21.getText() + " ");
                         button25Click.setVisibility(View.VISIBLE);
                         editText21.setVisibility(View.INVISIBLE);
                         return true;
@@ -415,7 +415,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button26Click.setText(editText22.getText());
+                        button26Click.setText(editText22.getText() + " ");
                         button26Click.setVisibility(View.VISIBLE);
                         editText22.setVisibility(View.INVISIBLE);
                         return true;
@@ -442,7 +442,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button18Click.setText(editText23.getText());
+                        button18Click.setText(editText23.getText() + " ");
                         button18Click.setVisibility(View.VISIBLE);
                         editText23.setVisibility(View.INVISIBLE);
                         return true;
@@ -469,7 +469,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button19Click.setText(editText24.getText());
+                        button19Click.setText(editText24.getText() + " ");
                         button19Click.setVisibility(View.VISIBLE);
                         editText24.setVisibility(View.INVISIBLE);
                         return true;
@@ -496,7 +496,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button22Click.setText(editText25.getText());
+                        button22Click.setText(editText25.getText() + " ");
                         button22Click.setVisibility(View.VISIBLE);
                         editText25.setVisibility(View.INVISIBLE);
                         return true;
@@ -523,7 +523,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
 
                 if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
                     if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
-                        button21Click.setText(editText26.getText());
+                        button21Click.setText(editText26.getText() + " ");
                         button21Click.setVisibility(View.VISIBLE);
                         editText26.setVisibility(View.INVISIBLE);
                         return true;
