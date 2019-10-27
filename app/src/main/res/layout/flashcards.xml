@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4B44F1"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#4B44F1">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,10 +21,10 @@
                 android:id="@+id/LinearLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="18dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="visible">
@@ -45,6 +45,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="24sp"
                         android:visibility="visible"
                         tools:visibility="visible" />
 
@@ -82,10 +83,10 @@
                 android:id="@+id/LinearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="13dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="invisible">
@@ -105,6 +106,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="24sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -141,10 +143,10 @@
                 android:id="@+id/LinearLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="13dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="invisible">
@@ -164,6 +166,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="24sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -199,10 +202,10 @@
                 android:id="@+id/LinearLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="13dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="invisible">
@@ -222,6 +225,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="24sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -257,10 +261,10 @@
                 android:id="@+id/LinearLayout5"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginLeft="10dp"
                 android:layout_marginTop="13dp"
-                android:layout_marginRight="10dp"
                 android:layout_marginBottom="7dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="invisible">
@@ -280,6 +284,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="24sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
