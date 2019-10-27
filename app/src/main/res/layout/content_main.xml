@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     xmlns:android="http://schemas.android.com/apk/res/android">
@@ -42,7 +42,7 @@
                         android:layout_height="120dp"
                         android:ems="10"
                         android:gravity="center"
-                        android:hint="Flashcard Set Name"
+                        android:hint="Click Me!"
                         android:inputType="textPersonName"
                         android:visibility="invisible" />
 
@@ -52,18 +52,35 @@
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_weight="1"
-                        android:text="Button"
+                        android:hint="Hold to edit"
                         android:visibility="invisible" />
                 </FrameLayout>
 
-                <Button
-                    android:id="@+id/button36"
-                    style="@style/ButtonStyle"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/editText14"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button36"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
 
             </LinearLayout>
 
@@ -72,23 +89,60 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button33"
-                    style="@style/ButtonStyle"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/button34"
-                    style="@style/ButtonStyle"
+                    <EditText
+                        android:id="@+id/editText15"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button33"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/editText16"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button34"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -96,23 +150,60 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button32"
-                    style="@style/ButtonStyle"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/button31"
-                    style="@style/ButtonStyle"
+                    <EditText
+                        android:id="@+id/editText27"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button32"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/editText28"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button31"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -120,23 +211,62 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button29"
-                    style="@style/ButtonStyle"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/button30"
-                    style="@style/ButtonStyle"
+                    <EditText
+                        android:id="@+id/editText17"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button29"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/button30"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/editText18"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+                </FrameLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -144,23 +274,62 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button27"
-                    style="@style/ButtonStyle"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/button28"
-                    style="@style/ButtonStyle"
+                    <EditText
+                        android:id="@+id/editText19"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button27"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/editText20"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button28"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -168,23 +337,62 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button25"
-                    style="@style/ButtonStyle"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/button26"
-                    style="@style/ButtonStyle"
+                    <Button
+                        android:id="@+id/button25"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/editText21"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/button26"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/editText22"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+                </FrameLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -192,23 +400,62 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button18"
-                    style="@style/ButtonStyle"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/button19"
-                    style="@style/ButtonStyle"
+                    <EditText
+                        android:id="@+id/editText23"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button18"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/button19"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/editText24"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+                </FrameLayout>
+
             </LinearLayout>
 
             <LinearLayout
@@ -216,23 +463,62 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button22"
-                    style="@style/ButtonStyle"
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
 
-                <Button
-                    android:id="@+id/button21"
-                    style="@style/ButtonStyle"
+                    <EditText
+                        android:id="@+id/editText25"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button22"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+                </FrameLayout>
+
+                <FrameLayout
                     android:layout_width="match_parent"
-                    android:layout_height="120dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/button21"
+                        style="@style/ButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:hint="Hold to edit"
+                        android:visibility="invisible" />
+
+                    <EditText
+                        android:id="@+id/editText26"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Click Me!"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible"
+                        tools:visibility="invisible" />
+                </FrameLayout>
+
             </LinearLayout>
 
         </LinearLayout>

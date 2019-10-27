@@ -45,7 +45,21 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     Button button22Click;
     Button button21Click;
     EditText editText11;
-
+    EditText editText14;
+    EditText editText15;
+    EditText editText16;
+    EditText editText27;
+    EditText editText28;
+    EditText editText17;
+    EditText editText18;
+    EditText editText19;
+    EditText editText20;
+    EditText editText21;
+    EditText editText22;
+    EditText editText23;
+    EditText editText24;
+    EditText editText25;
+    EditText editText26;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -71,6 +85,21 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         button21Click = findViewById(R.id.button21);
 
         editText11 = findViewById(R.id.editText11);
+        editText14 = findViewById(R.id.editText14);
+        editText15 = findViewById(R.id.editText15);
+        editText16 = findViewById(R.id.editText16);
+        editText27 = findViewById(R.id.editText27);
+        editText28 = findViewById(R.id.editText28);
+        editText17 = findViewById(R.id.editText17);
+        editText18 = findViewById(R.id.editText18);
+        editText19 = findViewById(R.id.editText19);
+        editText20 = findViewById(R.id.editText20);
+        editText21 = findViewById(R.id.editText21);
+        editText22 = findViewById(R.id.editText22);
+        editText23 = findViewById(R.id.editText23);
+        editText24 = findViewById(R.id.editText24);
+        editText25 = findViewById(R.id.editText25);
+        editText26 = findViewById(R.id.editText26);
 
         button35Click.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -91,6 +120,411 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button35Click.setText(editText11.getText());
                         button35Click.setVisibility(View.VISIBLE);
                         editText11.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button36Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText14.setVisibility(View.VISIBLE);
+                button36Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText14.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button36Click.setText(editText14.getText());
+                        button36Click.setVisibility(View.VISIBLE);
+                        editText14.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button33Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText15.setVisibility(View.VISIBLE);
+                button33Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText15.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button33Click.setText(editText15.getText());
+                        button33Click.setVisibility(View.VISIBLE);
+                        editText15.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button34Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText16.setVisibility(View.VISIBLE);
+                button34Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText16.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button34Click.setText(editText16.getText());
+                        button34Click.setVisibility(View.VISIBLE);
+                        editText16.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button32Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText27.setVisibility(View.VISIBLE);
+                button32Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText27.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button32Click.setText(editText27.getText());
+                        button32Click.setVisibility(View.VISIBLE);
+                        editText27.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button31Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText28.setVisibility(View.VISIBLE);
+                button31Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText28.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button31Click.setText(editText28.getText());
+                        button31Click.setVisibility(View.VISIBLE);
+                        editText28.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button29Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText17.setVisibility(View.VISIBLE);
+                button29Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText17.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button29Click.setText(editText17.getText());
+                        button29Click.setVisibility(View.VISIBLE);
+                        editText17.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button30Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText18.setVisibility(View.VISIBLE);
+                button30Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText18.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button30Click.setText(editText18.getText());
+                        button30Click.setVisibility(View.VISIBLE);
+                        editText18.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button27Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText19.setVisibility(View.VISIBLE);
+                button27Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText19.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button27Click.setText(editText19.getText());
+                        button27Click.setVisibility(View.VISIBLE);
+                        editText19.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button28Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText20.setVisibility(View.VISIBLE);
+                button28Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText20.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button28Click.setText(editText20.getText());
+                        button28Click.setVisibility(View.VISIBLE);
+                        editText20.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button25Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText21.setVisibility(View.VISIBLE);
+                button25Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText21.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button25Click.setText(editText21.getText());
+                        button25Click.setVisibility(View.VISIBLE);
+                        editText21.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button26Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText22.setVisibility(View.VISIBLE);
+                button26Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText22.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button26Click.setText(editText22.getText());
+                        button26Click.setVisibility(View.VISIBLE);
+                        editText22.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button18Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText23.setVisibility(View.VISIBLE);
+                button18Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText23.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button18Click.setText(editText23.getText());
+                        button18Click.setVisibility(View.VISIBLE);
+                        editText23.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button19Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText24.setVisibility(View.VISIBLE);
+                button19Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText24.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button19Click.setText(editText24.getText());
+                        button19Click.setVisibility(View.VISIBLE);
+                        editText24.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button22Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText25.setVisibility(View.VISIBLE);
+                button22Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText25.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button22Click.setText(editText25.getText());
+                        button22Click.setVisibility(View.VISIBLE);
+                        editText25.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
+
+        button21Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText26.setVisibility(View.VISIBLE);
+                button21Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText26.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button21Click.setText(editText26.getText());
+                        button21Click.setVisibility(View.VISIBLE);
+                        editText26.setVisibility(View.INVISIBLE);
                         return true;
                     }
                 }
