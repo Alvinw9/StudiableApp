@@ -45,7 +45,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
-                        android:textSize="24sp"
+                        android:textSize="28sp"
                         android:visibility="visible"
                         tools:visibility="visible" />
 
@@ -106,7 +106,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
-                        android:textSize="24sp"
+                        android:textSize="28sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -166,7 +166,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
-                        android:textSize="24sp"
+                        android:textSize="28sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -225,7 +225,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
-                        android:textSize="24sp"
+                        android:textSize="28sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -284,7 +284,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
-                        android:textSize="24sp"
+                        android:textSize="28sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
