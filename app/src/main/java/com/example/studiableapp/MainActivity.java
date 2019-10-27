@@ -1,31 +1,25 @@
 package com.example.studiableapp;
 
+import android.app.Notification;
+import android.app.NotificationManager;
+import android.app.PendingIntent;
+import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
-import android.media.Image;
+import android.content.res.Resources;
 import android.os.Bundle;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
-
 import android.view.KeyEvent;
-import android.text.Layout;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.content.Intent;
-import android.content.Context;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.Switch;
-import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.NotificationCompat;
 
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
@@ -62,6 +56,98 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     EditText editText24;
     EditText editText25;
     EditText editText26;
+
+    //Button btNotification;
+    //private final String CHANNEL_ID = "personal_notification";
+
+    public void showNotification(View view) {
+        PendingIntent pi = PendingIntent.getActivity(this, 0, new Intent(this, NotificationActivity.class), 0);
+        Resources r = getResources();
+        Notification notification = new NotificationCompat.Builder(this)
+                .setTicker("PLS")
+                .setSmallIcon(android.R.drawable.ic_menu_report_image)
+                .setContentTitle("WORK")
+                .setContentText("ALREADY")
+                .setContentIntent(pi)
+                .setAutoCancel(true)
+                .build();
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+        notificationManager.notify(0, notification);
+
+        //Toast.makeText(getBaseContext(), "DFKSJKL:SDJ:FL", Toast.LENGTH_LONG).show();
+    }
+
+    /*public void displayNotification(View view) {
+
+        *//*NotificationCompat.Builder builder = new NotificationCompat.Builder(
+                MainActivity.this, CHANNEL_ID
+        );
+        builder.setSmallIcon(R.drawable.ic_message_black);
+        builder.setContentTitle("New Notification");
+        builder.setContentText("This is a simple notification");
+        builder.setAutoCancel(true);
+        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
+        notificationManagerCompat.notify(001, builder.build());
+
+
+
+        *//*
+        Intent intent = new Intent(this, NotificationActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        PendingIntent pIntent = PendingIntent.getActivity(this, 0, intent, 0);
+
+*//*
+        NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(this)
+                .setSmallIcon(R.drawable.ic_message_black)
+                .setContentTitle("My notification")
+                .setContentText("Hello World!")
+                .setStyle(new NotificationCompat.BigTextStyle()
+                        .bigText("Much longer text that cannot fit one line..."))
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .setContentIntent(pendingIntent);
+
+
+        NotificationManagerCompat notificationManager = NotificationManagerCompat.from(this);
+
+        //NotificationManager mNotificationManager = (NotificationManager)getSystemService(Context.NOTIFICATION_SERVICE);
+        //mNotificationManager.notify();
+        notificationManager.notify(001, mBuilder.build());*//*
+        Notification n = new Notification.Builder(this)
+                .setSmallIcon(R.drawable.ic_message_black)
+                .setContentTitle("New mail from " + "test@gmail.com")
+                .setContentText("Subject")
+                .setContentIntent(pIntent).setAutoCancel(true)
+                .setStyle(new Notification.BigTextStyle().bigText("LFJDJF"))
+                .build();
+
+        NotificationManager notificationManager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
+// Hide the notification after it's selected
+
+        notificationManager.notify(0, n);
+
+        Toast.makeText(getBaseContext(), "DFKSJKL:SDJ:FL", Toast.LENGTH_LONG).show();
+
+
+    }*/
+
+    /*private void createNotificationChannel() {
+        // Create the NotificationChannel, but only on API 26+ because
+        // the NotificationChannel class is new and not in the support library
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+            CharSequence name = getString(R.string.channel_name);
+            String description = getString(R.string.channel_description);
+            int importance = NotificationManager.IMPORTANCE_DEFAULT;
+            NotificationChannel channel = new NotificationChannel(CHANNEL_ID, name, importance);
+            channel.setDescription(description);
+            // Register the channel with the system; you can't change the importance
+            // or other notification behaviors after this
+            NotificationManager notificationManager = getSystemService(NotificationManager.class);
+            notificationManager.createNotificationChannel(channel);
+        }
+    }*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -102,6 +188,48 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         editText24 = findViewById(R.id.editText24);
         editText25 = findViewById(R.id.editText25);
         editText26 = findViewById(R.id.editText26);
+
+
+
+        /*btNotification = findViewById(R.id.notify);
+
+        btNotification.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                String message = "This is a notification example.";
+                NotificationCompat.Builder builder = new NotificationCompat.Builder(
+                        MainActivity.this, CHANNEL_ID
+                );
+                        builder.setSmallIcon(R.drawable.ic_add_alarm);
+                        builder.setContentTitle("New Notification");
+                        builder.setContentText(message);
+                        builder.setAutoCancel(true);
+                        builder.setPriority(NotificationCompat.PRIORITY_DEFAULT);
+
+                        NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
+                        notificationManagerCompat.notify(001, builder.build());
+*/
+                /*Intent intent = new Intent(MainActivity.this,
+                        NotificationActivity.class);
+                intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+                intent.putExtra( "message", message );
+
+                PendingIntent pendingIntent = PendingIntent.getActivity( MainActivity.this,
+                        0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
+                builder.setContentIntent(pendingIntent);
+
+                NotificationManager notificationManager = (NotificationManager)getSystemService(
+                        Context.NOTIFICATION_SERVICE
+                );
+                notificationManager.notify(0, builder.build());*/
+
+                //Toast.makeText(getBaseContext(), "DFKSJKL:SDJ:FL", Toast.LENGTH_LONG).show();
+
+
+            //}
+
+        //});
 
         button35Click.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
@@ -551,7 +679,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
             }
         });
 
-        addFlashCardSet.setOnClickListener(new View.OnClickListener() {
+        addFlashCardSet.setOnClickListener(new OnClickListener() {
 
             @Override
             public void onClick(View v) {
@@ -795,4 +923,5 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                 break;
         }
     }
+
 }
