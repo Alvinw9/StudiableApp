@@ -1,7 +1,10 @@
 package com.example.studiableapp;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
+import android.content.SharedPreferences;
+
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.EditText;
@@ -178,10 +181,104 @@ public class MainActivity2 extends AppCompatActivity {
                     }
                 }
 
+                saveData1();
+
             }
 
         });
 
+    }
+
+    private void saveData1() {
+        SharedPreferences sp = getSharedPreferences("Flashcards1", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString("text3", text3Click.getText().toString());
+        editor.putInt("text3b", text3Click.getVisibility());
+        editor.putString("text4", text4Click.getText().toString());
+        editor.putInt("text4b", text4Click.getVisibility());
+        editor.putString("text9", text9Click.getText().toString());
+        editor.putInt("text9b", text9Click.getVisibility());
+        editor.putString("text10", text10Click.getText().toString());
+        editor.putInt("text10b", text10Click.getVisibility());
+        editor.putString("text7", text7Click.getText().toString());
+        editor.putInt("text7b", text7Click.getVisibility());
+        editor.putString("text8", text8Click.getText().toString());
+        editor.putInt("text8b", text8Click.getVisibility());
+        editor.putString("text5", text5Click.getText().toString());
+        editor.putInt("text5b", text5Click.getVisibility());
+        editor.putString("text6", text6Click.getText().toString());
+        editor.putInt("text6b", text6Click.getVisibility());
+        editor.putString("text", textClick.getText().toString());
+        editor.putInt("textb", textClick.getVisibility());
+        editor.putString("text2", text2Click.getText().toString());
+        editor.putInt("text2b", text2Click.getVisibility());
+        editor.putInt("Layout2", linearLayout2.getVisibility());
+        editor.putInt("Layout3", linearLayout3.getVisibility());
+        editor.putInt("Layout4", linearLayout4.getVisibility());
+        editor.putInt("Layout5", linearLayout5.getVisibility());
+        editor.putInt("switch2", switch2.getVisibility());
+        editor.putInt("switch3", switch3.getVisibility());
+        editor.putInt("switch4", switch4.getVisibility());
+        editor.putInt("switch5", switch5.getVisibility());
+        editor.apply();
+    }
+
+    private void loadData1() {
+        SharedPreferences sp = getSharedPreferences("Flashcards1", Context.MODE_PRIVATE);
+        text3Click.setText(sp.getString("text3", text3Click.getText().toString()));
+        text3Click.setVisibility(sp.getInt("text3b", text3Click.getVisibility()));
+        text4Click.setText(sp.getString("text4", text4Click.getText().toString()));
+        text4Click.setVisibility(sp.getInt("text4b", text4Click.getVisibility()));
+        text9Click.setText(sp.getString("text9", text9Click.getText().toString()));
+        text9Click.setVisibility(sp.getInt("text9b", text9Click.getVisibility()));
+        text10Click.setText(sp.getString("text10", text10Click.getText().toString()));
+        text10Click.setVisibility(sp.getInt("text10b", text10Click.getVisibility()));
+        text7Click.setText(sp.getString("text7", text7Click.getText().toString()));
+        text7Click.setVisibility(sp.getInt("text7b", text7Click.getVisibility()));
+        text8Click.setText(sp.getString("text8", text8Click.getText().toString()));
+        text8Click.setVisibility(sp.getInt("text8b", text8Click.getVisibility()));
+        text5Click.setText(sp.getString("text5", text5Click.getText().toString()));
+        text5Click.setVisibility(sp.getInt("text5b", text5Click.getVisibility()));
+        text6Click.setText(sp.getString("text6", text6Click.getText().toString()));
+        text6Click.setVisibility(sp.getInt("text6b", text6Click.getVisibility()));
+        textClick.setText(sp.getString("text", textClick.getText().toString()));
+        textClick.setVisibility(sp.getInt("textb", textClick.getVisibility()));
+        text2Click.setText(sp.getString("text2", text2Click.getText().toString()));
+        text2Click.setVisibility(sp.getInt("text2b", text2Click.getVisibility()));
+        linearLayout2.setVisibility(sp.getInt("Layout2", linearLayout2.getVisibility()));
+        linearLayout3.setVisibility(sp.getInt("Layout3", linearLayout3.getVisibility()));
+        linearLayout4.setVisibility(sp.getInt("Layout4", linearLayout4.getVisibility()));
+        linearLayout5.setVisibility(sp.getInt("Layout5", linearLayout5.getVisibility()));
+        switch2.setVisibility(sp.getInt("switch2", linearLayout2.getVisibility()));
+        switch3.setVisibility(sp.getInt("switch3", linearLayout3.getVisibility()));
+        switch4.setVisibility(sp.getInt("switch4", linearLayout4.getVisibility()));
+        switch5.setVisibility(sp.getInt("switch5", linearLayout5.getVisibility()));
+        if(text3Click.getVisibility() == View.VISIBLE) {
+            text4Click.setVisibility(View.VISIBLE);
+        }
+        if(text9Click.getVisibility() == View.VISIBLE) {
+            text10Click.setVisibility(View.VISIBLE);
+        }
+        if(text7Click.getVisibility() == View.VISIBLE) {
+            text8Click.setVisibility(View.VISIBLE);
+        }
+        if(text5Click.getVisibility() == View.VISIBLE) {
+            text6Click.setVisibility(View.VISIBLE);
+        }
+        if(textClick.getVisibility() == View.VISIBLE) {
+            text2Click.setVisibility(View.VISIBLE);
+        }
+    }
+    @Override
+    protected void onStop() {
+        super.onStop();
+        saveData1();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadData1();
     }
 
 }
