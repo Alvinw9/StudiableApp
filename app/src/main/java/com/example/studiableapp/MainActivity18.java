@@ -43,7 +43,7 @@ public class MainActivity18 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.flashcards_content);
+        setContentView(R.layout.flashcards18_content);
 
         ImageView addFlashCard = findViewById(R.id.imageView3);
 
