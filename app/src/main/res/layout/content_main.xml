@@ -30,13 +30,30 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <Button
-                    android:id="@+id/button35"
-                    android:layout_width="wrap_content"
-                    android:layout_height="200dp"
-                    android:layout_weight="1"
-                    android:text="Button"
-                    android:visibility="invisible" />
+                <FrameLayout
+                    android:layout_width="99dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/editText11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Flashcard Set Name"
+                        android:inputType="textPersonName"
+                        android:visibility="invisible" />
+
+                    <Button
+                        android:id="@+id/button35"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:layout_weight="1"
+                        android:text="Button"
+                        android:visibility="invisible" />
+
+                </FrameLayout>
 
                 <Button
                     android:id="@+id/button36"
@@ -45,6 +62,7 @@
                     android:layout_weight="1"
                     android:text="Button"
                     android:visibility="invisible" />
+
             </LinearLayout>
 
             <LinearLayout

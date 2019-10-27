@@ -9,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.view.KeyEvent;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -16,9 +17,11 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.content.Intent;
 import android.content.Context;
+import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
@@ -39,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     Button button19Click;
     Button button22Click;
     Button button21Click;
+    EditText editText11;
 
 
     @Override
@@ -64,6 +68,34 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         button22Click = findViewById(R.id.button22);
         button21Click = findViewById(R.id.button21);
 
+        editText11 = findViewById(R.id.editText11);
+
+        button35Click.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                editText11.setVisibility(View.VISIBLE);
+                button35Click.setVisibility(View.INVISIBLE);
+                Toast.makeText(getBaseContext(), "Edit Mode", Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
+        editText11.setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+
+                if ( event.getAction() == KeyEvent.ACTION_DOWN ) {
+                    if ( (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) || (keyCode == KeyEvent.KEYCODE_ENTER) ) {
+                        button35Click.setText(editText11.getText());
+                        button35Click.setVisibility(View.VISIBLE);
+                        editText11.setVisibility(View.INVISIBLE);
+                        return true;
+                    }
+                }
+
+                return false;
+            }
+        });
 
         addFlashCardSet.setOnClickListener(new View.OnClickListener() {
 
