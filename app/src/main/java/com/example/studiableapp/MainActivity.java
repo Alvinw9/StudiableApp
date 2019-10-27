@@ -26,6 +26,8 @@ import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.InputStream;
+
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
 
@@ -101,6 +103,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         editText24 = findViewById(R.id.editText24);
         editText25 = findViewById(R.id.editText25);
         editText26 = findViewById(R.id.editText26);
+
 
         button35Click.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
