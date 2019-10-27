@@ -53,12 +53,12 @@
                         android:id="@+id/switch1"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="6.5"
+                        android:layout_weight="6"
                         android:background="@android:color/transparent"
                         android:checked="true"
                         android:paddingRight="10dp"
                         android:text="Show"
-                        android:textSize="14sp" />
+                        android:textSize="10sp" />
                 </LinearLayout>
 
                 <EditText
@@ -114,10 +114,11 @@
                         android:id="@+id/switch2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="6.5"
+                        android:layout_weight="6"
                         android:checked="true"
                         android:paddingRight="10dp"
                         android:text="Show"
+                        android:textSize="10sp"
                         android:visibility="invisible" />
                 </LinearLayout>
 
@@ -174,10 +175,11 @@
                         android:id="@+id/switch3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="6.5"
+                        android:layout_weight="6"
                         android:checked="true"
                         android:paddingRight="10dp"
                         android:text="Show"
+                        android:textSize="10sp"
                         android:visibility="invisible" />
                 </LinearLayout>
 
@@ -233,10 +235,11 @@
                         android:id="@+id/switch4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="6.5"
+                        android:layout_weight="6"
                         android:checked="true"
                         android:paddingRight="10dp"
                         android:text="Show"
+                        android:textSize="10sp"
                         android:visibility="invisible" />
                 </LinearLayout>
 
@@ -292,10 +295,11 @@
                         android:id="@+id/switch5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_weight="6.5"
+                        android:layout_weight="6"
                         android:checked="true"
                         android:paddingRight="10dp"
                         android:text="Show"
+                        android:textSize="10sp"
                         android:visibility="invisible" />
                 </LinearLayout>
 
