@@ -40,7 +40,8 @@
                 <FrameLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_weight="1" >
+                    android:layout_weight="1"
+                    android:visibility="visible">
 
                     <EditText
                         android:id="@+id/editText11"
@@ -51,9 +52,9 @@
                         android:gravity="center"
                         android:hint="Click Me!"
                         android:inputType="textPersonName"
-                        android:visibility="invisible"
+                        android:maxLines="4"
                         android:singleLine="false"
-                        android:maxLines="4" />
+                        android:visibility="visible" />
 
                     <Button
                         android:id="@+id/button35"
@@ -66,7 +67,7 @@
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:singleLine="false"
-                        android:visibility="invisible" />
+                        android:visibility="visible" />
                 </FrameLayout>
 
                 <FrameLayout
@@ -138,6 +139,7 @@
 
                     <EditText
                         android:id="@+id/editText16"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -172,6 +174,7 @@
 
                     <EditText
                         android:id="@+id/editText27"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -199,6 +202,7 @@
 
                     <EditText
                         android:id="@+id/editText28"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -233,6 +237,7 @@
 
                     <EditText
                         android:id="@+id/editText17"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -270,6 +275,7 @@
 
                     <EditText
                         android:id="@+id/editText18"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -296,6 +302,7 @@
 
                     <EditText
                         android:id="@+id/editText19"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -324,6 +331,7 @@
 
                     <EditText
                         android:id="@+id/editText20"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -368,6 +376,7 @@
 
                     <EditText
                         android:id="@+id/editText21"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -396,6 +405,7 @@
 
                     <EditText
                         android:id="@+id/editText22"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -422,6 +432,7 @@
 
                     <EditText
                         android:id="@+id/editText23"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -459,6 +470,7 @@
 
                     <EditText
                         android:id="@+id/editText24"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -485,6 +497,7 @@
 
                     <EditText
                         android:id="@+id/editText25"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -522,6 +535,7 @@
 
                     <EditText
                         android:id="@+id/editText26"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"

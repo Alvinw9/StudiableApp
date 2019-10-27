@@ -101,6 +101,41 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         editText25 = findViewById(R.id.editText25);
         editText26 = findViewById(R.id.editText26);
 
+        button35Click.setPaintFlags(0);
+        editText11.setPaintFlags(0);
+        /*button35Click.setPaintFlags(View.INVISIBLE);
+        *//*button36Click.setPaintFlags(View.INVISIBLE);
+        button33Click.setPaintFlags(View.INVISIBLE);
+        button34Click.setPaintFlags(View.INVISIBLE);
+        button32Click.setPaintFlags(View.INVISIBLE);
+        button31Click.setPaintFlags(View.INVISIBLE);
+        button29Click.setPaintFlags(View.INVISIBLE);
+        button30Click.setPaintFlags(View.INVISIBLE);
+        button27Click.setPaintFlags(View.INVISIBLE);
+        button28Click.setPaintFlags(View.INVISIBLE);
+        button25Click.setPaintFlags(View.INVISIBLE);
+        button26Click.setPaintFlags(View.INVISIBLE);
+        button18Click.setPaintFlags(View.INVISIBLE);
+        button19Click.setPaintFlags(View.INVISIBLE);
+        button22Click.setPaintFlags(View.INVISIBLE);
+        button21Click.setPaintFlags(View.INVISIBLE);
+        *//*editText11.setPaintFlags(View.INVISIBLE);
+        *//*editText14.setPaintFlags(View.INVISIBLE);
+        editText15.setPaintFlags(View.INVISIBLE);
+        editText16.setPaintFlags(View.INVISIBLE);
+        editText27.setPaintFlags(View.INVISIBLE);
+        editText28.setPaintFlags(View.INVISIBLE);
+        editText17.setPaintFlags(View.INVISIBLE);
+        editText18.setPaintFlags(View.INVISIBLE);
+        editText19.setPaintFlags(View.INVISIBLE);
+        editText20.setPaintFlags(View.INVISIBLE);
+        editText21.setPaintFlags(View.INVISIBLE);
+        editText22.setPaintFlags(View.INVISIBLE);
+        editText23.setPaintFlags(View.INVISIBLE);
+        editText24.setPaintFlags(View.INVISIBLE);
+        editText25.setPaintFlags(View.INVISIBLE);
+        editText26.setPaintFlags(View.INVISIBLE);*/
+
         button35Click.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {

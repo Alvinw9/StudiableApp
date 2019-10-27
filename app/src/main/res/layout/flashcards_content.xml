@@ -17,7 +17,8 @@
             android:layout_width="match_parent"
             android:layout_height="53dp"
             android:gravity="center|left"
-            android:textSize="30sp" />
+            android:textSize="30sp"
+            android:text="TEST" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
