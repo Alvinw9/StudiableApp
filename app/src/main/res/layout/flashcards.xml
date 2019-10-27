@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#2620c9">
+    android:background="#4B44F1"
+    android:orientation="vertical">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -21,10 +21,10 @@
                 android:id="@+id/LinearLayout1"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginBottom="7dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="18dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="visible">
@@ -82,10 +82,10 @@
                 android:id="@+id/LinearLayout2"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="7dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="invisible">
@@ -141,10 +141,10 @@
                 android:id="@+id/LinearLayout3"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="7dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="invisible">
@@ -199,10 +199,10 @@
                 android:id="@+id/LinearLayout4"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="7dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="invisible">
@@ -257,10 +257,10 @@
                 android:id="@+id/LinearLayout5"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="7dp"
                 android:layout_marginLeft="10dp"
+                android:layout_marginTop="13dp"
                 android:layout_marginRight="10dp"
+                android:layout_marginBottom="7dp"
                 android:background="@drawable/outlinecard"
                 android:orientation="vertical"
                 android:visibility="invisible">
