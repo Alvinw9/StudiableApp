@@ -32,16 +32,18 @@
 
                 <Button
                     android:id="@+id/button35"
+                    style="@style/ButtonStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="200dp"
+                    android:layout_height="120dp"
                     android:layout_weight="1"
                     android:text="Button"
                     android:visibility="invisible" />
 
                 <Button
                     android:id="@+id/button36"
+                    style="@style/ButtonStyle"
                     android:layout_width="wrap_content"
-                    android:layout_height="200dp"
+                    android:layout_height="120dp"
                     android:layout_weight="1"
                     android:text="Button"
                     android:visibility="invisible" />

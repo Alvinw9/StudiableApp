@@ -9,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import android.text.Layout;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -18,6 +19,7 @@ import android.content.Intent;
 import android.content.Context;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 
 public class MainActivity extends AppCompatActivity implements OnClickListener{
@@ -34,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
         ImageView addFlashCardSet = findViewById(R.id.imageView);
         button35Click = findViewById(R.id.button35);
         button36Click = findViewById(R.id.button36);
+
 
         addFlashCardSet.setOnClickListener(new View.OnClickListener() {
 
