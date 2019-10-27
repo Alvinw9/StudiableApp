@@ -653,7 +653,6 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     private void loadData() {
         SharedPreferences sp = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
         button35Click.setText(sp.getString("button35text",button35Click.getText().toString()));
-        Toast.makeText(getBaseContext(), "LOADING DATA", Toast.LENGTH_LONG).show();
     }
 
     @Override
