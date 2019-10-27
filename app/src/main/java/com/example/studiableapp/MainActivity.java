@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
     Button button33Click;
     Button button34Click;
     Button button32Click;
-    Button button31Click;
+    public static Button button31Click;
     Button button29Click;
     Button button30Click;
     Button button27Click;
     Button button28Click;
     Button button25Click;
     Button button26Click;
-    Button button18Click;
+    public static Button button18Click;
     Button button19Click;
     Button button22Click;
     Button button21Click;
