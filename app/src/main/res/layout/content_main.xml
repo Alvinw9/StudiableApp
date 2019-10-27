@@ -76,6 +76,7 @@
 
                     <EditText
                         android:id="@+id/editText14"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
@@ -109,6 +110,7 @@
 
                     <EditText
                         android:id="@+id/editText15"
+                        style="@style/ButtonStyle"
                         android:layout_width="match_parent"
                         android:layout_height="120dp"
                         android:layout_gravity="center"
