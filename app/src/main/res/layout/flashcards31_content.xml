@@ -22,7 +22,8 @@
             android:shadowDx="0"
             android:shadowDy="0"
             android:shadowRadius="20"
-            android:paddingTop="18dp"/>
+            android:textColor="#FFFFFF"
+            android:textSize="30sp" />
     </com.google.android.material.appbar.AppBarLayout>
 
     <androidx.core.widget.NestedScrollView
@@ -39,7 +40,7 @@
             android:orientation="vertical">
 
             <include
-                layout="@layout/flashcards"
+                layout="@layout/flashcards31"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent" />
 
