@@ -1,5 +1,6 @@
 package com.example.studiableapp;
 
+import android.content.SharedPreferences;
 import android.media.Image;
 import android.os.Bundle;
 
@@ -124,6 +125,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button35Click.setText(editText11.getText() + " ");
                         button35Click.setVisibility(View.VISIBLE);
                         editText11.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -151,6 +153,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button36Click.setText(editText14.getText() + " ");
                         button36Click.setVisibility(View.VISIBLE);
                         editText14.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -178,6 +181,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button33Click.setText(editText15.getText() + " ");
                         button33Click.setVisibility(View.VISIBLE);
                         editText15.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -205,6 +209,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button34Click.setText(editText16.getText() + " ");
                         button34Click.setVisibility(View.VISIBLE);
                         editText16.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -232,6 +237,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button32Click.setText(editText27.getText() + " ");
                         button32Click.setVisibility(View.VISIBLE);
                         editText27.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -259,6 +265,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button31Click.setText(editText28.getText() + " ");
                         button31Click.setVisibility(View.VISIBLE);
                         editText28.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -286,6 +293,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button29Click.setText(editText17.getText() + " ");
                         button29Click.setVisibility(View.VISIBLE);
                         editText17.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -313,6 +321,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button30Click.setText(editText18.getText() + " ");
                         button30Click.setVisibility(View.VISIBLE);
                         editText18.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -340,6 +349,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button27Click.setText(editText19.getText() + " ");
                         button27Click.setVisibility(View.VISIBLE);
                         editText19.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -367,6 +377,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button28Click.setText(editText20.getText() + " ");
                         button28Click.setVisibility(View.VISIBLE);
                         editText20.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -394,6 +405,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button25Click.setText(editText21.getText() + " ");
                         button25Click.setVisibility(View.VISIBLE);
                         editText21.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -421,6 +433,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button26Click.setText(editText22.getText() + " ");
                         button26Click.setVisibility(View.VISIBLE);
                         editText22.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -448,6 +461,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button18Click.setText(editText23.getText() + " ");
                         button18Click.setVisibility(View.VISIBLE);
                         editText23.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -475,6 +489,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button19Click.setText(editText24.getText() + " ");
                         button19Click.setVisibility(View.VISIBLE);
                         editText24.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -502,6 +517,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button22Click.setText(editText25.getText() + " ");
                         button22Click.setVisibility(View.VISIBLE);
                         editText25.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -529,6 +545,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
                         button21Click.setText(editText26.getText() + " ");
                         button21Click.setVisibility(View.VISIBLE);
                         editText26.setVisibility(View.INVISIBLE);
+                        saveData();
                         return true;
                     }
                 }
@@ -542,6 +559,7 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
             @Override
             public void onClick(View v) {
 
+                saveData();
                 if ( button35Click.getVisibility() != View.VISIBLE ) {
                     button35Click.setVisibility(View.VISIBLE);
                 } else if ( button35Click.getVisibility() == View.VISIBLE ) {
@@ -621,6 +639,33 @@ public class MainActivity extends AppCompatActivity implements OnClickListener{
             }
 
         });
+
+
+    }
+
+    private void saveData() {
+        SharedPreferences sp = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = sp.edit();
+        editor.putString("button35text", button35Click.getText().toString());
+        editor.apply();
+    }
+
+    private void loadData() {
+        SharedPreferences sp = getSharedPreferences("MyPrefs", Context.MODE_PRIVATE);
+        button35Click.setText(sp.getString("button35text",button35Click.getText().toString()));
+        Toast.makeText(getBaseContext(), "LOADING DATA", Toast.LENGTH_LONG).show();
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        saveData();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        loadData();
     }
 
     public void addListenerOnButton() {
