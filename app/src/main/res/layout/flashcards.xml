@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#2620c9">
+    android:background="#4B44F1">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -45,6 +45,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="18sp"
                         android:visibility="visible"
                         tools:visibility="visible" />
 
@@ -105,6 +106,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="18sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -164,6 +166,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="18sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -222,6 +225,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="18sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
@@ -280,6 +284,7 @@
                         android:editable="true"
                         android:gravity="center_horizontal|center_vertical"
                         android:hint="Click to edit"
+                        android:textSize="18sp"
                         android:visibility="invisible"
                         tools:visibility="invisible" />
 
